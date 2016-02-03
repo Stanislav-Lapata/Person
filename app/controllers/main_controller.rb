@@ -5,4 +5,8 @@ class MainController < ApplicationController
   def people
     render partial: 'people', layout: false
   end
+
+  def person
+    render partial: 'person', layout: false
+  end
 end
