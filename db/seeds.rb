@@ -5,5 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-
-10.times {|i| Person.create(name: "Person#{i+1}", tel: "111-11-#{i+1}")}
+Person.destroy_all
+10.times {|i| Person.create(name: "Person#{i+1}", tel: "111-11-#{i+1}", true: true, false: false)}

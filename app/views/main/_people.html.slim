@@ -1,7 +1,10 @@
 ul
-  li ng-repeat="person in people"
+  li ng-repeat="person in people | checkPerson"
     a href="/#/people/{{person.id}}"
       | {{person.name}}
     ul
       li
         | {{person.tel}}
+        ul
+          li
+            | {{person.true}}{{person.false}}

@@ -1,5 +1,4 @@
-angular.module("Angular", ['ngResource', 'ngRoute']).
-  controller('PeopleCtrl', ['$scope', 'Person', '$routeParams', function($scope, Person, $routeParams){
+angular.module('Angular').controller('PeopleCtrl', ['$scope', 'Person', '$routeParams', function($scope, Person, $routeParams){
     $scope.people = Person.query()
   }]).
   controller('PersonCtrl', ['$scope', 'Person', '$routeParams',

@@ -15,7 +15,8 @@
 //= require angular
 //= require angular-resource
 //= require angular-route
-//= require turbolinks
-//= require modules
 //= require configs
+//= require modules
+//= require filters
 //= require controllers
+
